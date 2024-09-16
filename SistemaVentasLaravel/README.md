@@ -2,7 +2,7 @@
 
 Gestión de Punto de Venta y Facturación construido con Laravel 10 y MySql.
 
-![Inicio](capturas/01.png)
+![image](https://github.com/user-attachments/assets/2d4a4b4d-c2e2-4906-96ac-dd0826283e52)
 
 ## 😎 Características
 - POS
