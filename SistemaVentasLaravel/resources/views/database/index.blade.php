@@ -14,10 +14,10 @@
             @endif
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Database Backup List</h4>
+                    <h4 class="mb-3">Lista de Respaldo de Base de Datos</h4>
                 </div>
                 <div>
-                    <a href="{{ route('backup.create') }}" class="btn btn-primary add-list"></i>Backup Now</a>
+                    <a href="{{ route('backup.create') }}" class="btn btn-primary add-list"></i>Respaldar Ahora</a>
                 </div>
             </div>
         </div>
@@ -27,11 +27,11 @@
                 <table class="table mb-0">
                     <thead class="bg-white text-uppercase">
                         <tr class="ligth ligth-data">
-                            <th>No.</th>
-                            <th>File Name</th>
-                            <th>File Size</th>
-                            <th>Path</th>
-                            <th>Action</th>
+                            <th>#</th>
+                            <th>Nombre del archivo</th>
+                            <th>Tamaño del archivo</th>
+                            <th>Ruta</th>
+                            <th>Acción</th>
                         </tr>
                     </thead>
                     <tbody class="ligth-body">
@@ -43,10 +43,10 @@
                             <td>{{ $file->getPath() }}</td>
                             <td>
                                 <div class="d-flex align-items-center list-action">
-                                    <a class="btn btn-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Download"
+                                    <a class="btn btn-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Descargar"
                                         href="{{ route('backup.download', $file->getFileName()) }}"><i class="fa-solid fa-download mr-0"></i>
                                     </a>
-                                    <a class="btn btn-danger mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"
+                                    <a class="btn btn-danger mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliminar"
                                         href="{{ route('backup.delete', $file->getFileName()) }}"><i class="fa-solid fa-trash mr-0"></i>
                                     </a>
                                 </div>

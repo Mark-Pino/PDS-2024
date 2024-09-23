@@ -11,6 +11,7 @@ use Illuminate\Http\RedirectResponse;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Redirect;
+use Spatie\Permission\Models\Role;
 
 class ProfileController extends Controller
 {
@@ -19,8 +20,10 @@ class ProfileController extends Controller
      */
     public function show(Request $request): View
     {
+        $roles = Role::all();
         return view('profile.index', [
             'user' => $request->user(),
+            'roles' => $roles,
         ]);
     }
 
@@ -77,7 +80,7 @@ class ProfileController extends Controller
 
         User::where('id', $user->id)->update($validatedData);
 
-        return Redirect::route('profile')->with('success', 'Profile has been updated!');
+        return Redirect::route('profile')->with('success', '¡El perfil se ha actualizado!');
     }
 
     /**

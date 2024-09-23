@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Artisan;
 
 class DatabaseBackupController extends Controller
 {    public function index()
@@ -18,22 +19,22 @@ class DatabaseBackupController extends Controller
 
     // Backup database is not working, and you need to enter manually in terminal with command php artisan backup:run.
     public function create(){
-        // \Artisan::call('backup:run');
+        Artisan::call('backup:run'); //No funciona guiño guiño xD
 
-        return Redirect::route('backup.index')->with('success', 'Database Backup Successfully!');
+        return Redirect::route('backup.index')->with('success', '¡Base de datos creado con éxito!');
     }
 
     public function download(String $getFileName)
     {
-        $path = storage_path('app\POS/' . $getFileName);
+        $path = storage_path('app\laravel/' . $getFileName);
 
         return response()->download($path);
     }
 
     public function delete(String $getFileName)
     {
-        Storage::delete('POS/' . $getFileName);
+        Storage::delete('laravel/' . $getFileName);
 
-        return Redirect::route('backup.index')->with('success', 'Database Deleted Successfully!');
+        return Redirect::route('backup.index')->with('success', '¡Base de datos eliminada con éxito!');
     }
 }
