@@ -7654,14 +7654,23 @@ g[aria-describedby="id-22-description"] {
     left: 7.5%; } }
 
 @media (max-width: 767px) {
-  .table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    display: block;
-    overflow-x: auto; }
-  .tree {
-    display: inline-table; } }
+    .table th, .table td {
+        white-space: nowrap;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    /* Agregar algo de margen para mejorar la apariencia */
+    .table-responsive {
+        margin: 0 auto;
+    }
+}
 
 @media (max-width: 575px) {
   .user-list-files {

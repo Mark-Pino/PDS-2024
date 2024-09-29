@@ -28,9 +28,9 @@ class PaySalaryController extends Controller
 
         return view('pay-salary.index', [
             'advanceSalaries' => AdvanceSalary::with(['employee'])
+                ->sortable()
                 ->orderByDesc('date')
                 ->filter(request(['search']))
-                ->sortable()
                 ->paginate($row)
                 ->appends(request()->query()),
         ]);
@@ -62,9 +62,9 @@ class PaySalaryController extends Controller
 
         return view('pay-salary.history', [
             'paySalaries' => PaySalary::with(['employee'])
+            ->sortable()
             ->orderByDesc('date')
             ->filter(request(['search']))
-            ->sortable()
             ->paginate($row)
             ->appends(request()->query()),
         ]);

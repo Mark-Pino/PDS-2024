@@ -60,6 +60,9 @@
                         </div>
                     </div>
                     <!-- end: Input Data -->
+                    <div class="mt-2">
+                        <a class="btn bg-danger" href="{{ route('pay-salary.payHistory') }}">Volver</a>
+                    </div>
                 </div>
             </div>
         </div>

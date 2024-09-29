@@ -20,7 +20,7 @@
                             <div class="col-md-12">
                                 <div class="profile-img-edit">
                                     <div class="crm-profile-img-edit">
-                                        <img class="crm-profile-pic rounded-circle avatar-100" id="image-preview" src="{{ asset('assets/images/user/1.png') }}" alt="profile-pic">
+                                        <img class="crm-profile-pic rounded-circle avatar-100" id="image-preview" src="{{ old('name', $userData->photo) ? asset('storage/profile/'.$userData->photo) : asset('assets/images/user/1.png') }}" alt="profile-pic">
                                     </div>
                                 </div>
                             </div>

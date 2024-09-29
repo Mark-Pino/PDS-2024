@@ -11,26 +11,28 @@
                         <p class="mb-2 badge
                             @switch($role)
                                 @case('SuperAdmin')
-                                    bg-danger
+                                    bg-indigo
                                     @break
                                 @case('Admin')
-                                    bg-warning
+                                    bg-pink
                                     @break
                                 @case('Gerente')
-                                    bg-success
+                                    bg-warning
+                                    @break
+                                @case('Empleado')
+                                    bg-teal
                                     @break
                                 @case('Usuario')
-                                    bg-info
+                                    bg-skyblue
                                     @break
                                 @default
-                                    bg-secondary
+                                    bg-light
                             @endswitch
                         ">
                             {{ $role }}
-                        </p>
+                        </p><br>
                     @endforeach
-
-                    <a href="#" class="btn btn-primary font-size-14">Editar Perfil</a>
+                    <a href="{{ route('dashboard') }}" class="btn btn-danger font-size-14">Atras</a>
                 </div>
             </div>
             <ul class="list-inline p-0 m-0">

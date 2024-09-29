@@ -14,12 +14,11 @@
             @endif
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Permission List</h4>
-                    <p class="mb-0">A permission dashboard lets you easily gather and visualize permission data from optimizing <br>
-                        the permission experience, ensuring permission retention. </p>
+                    <h4 class="mb-3">Lista de Permisos</h4>
+                    <p class="mb-3 mr-3">Un panel de permisos te permite recopilar y visualizar fácilmente <br> datos de permisos para optimizar la experiencia de permisos, asegurando la retención de permisos. </p>
                 </div>
                 <div>
-                    <a href="{{ route('permission.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Add Permission</a>
+                    <a href="{{ route('permission.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Agregar Permisos </a>
                 </div>
             </div>
         </div>
@@ -59,10 +58,10 @@
                 <table class="table mb-0">
                     <thead class="bg-white text-uppercase">
                         <tr class="ligth ligth-data">
-                            <th>No.</th>
-                            <th>Permission Name</th>
-                            <th>Gourp Name</th>
-                            <th>Action</th>
+                            <th class="col-1">#</th>
+                            <th class="col-1">Nombre del Permiso</th>
+                            <th class="col-1">Nombre del Grupo</th>
+                            <th>Acción</th>
                         </tr>
                     </thead>
                     <tbody class="ligth-body">
@@ -77,7 +76,7 @@
                                     @csrf
                                     <div class="d-flex align-items-center list-action">
                                         <a class="btn btn-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
-                                            href="{{ route('permission.edit', $permission->id) }}""><i class="ri-pencil-line mr-0"></i>
+                                            href="{{ route('permission.edit', $permission->id) }}"><i class="ri-pencil-line mr-0"></i>
                                         </a>
                                         <button type="submit" class="btn btn-warning mr-2 border-none" onclick="return confirm('Are you sure you want to delete this record?')" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="ri-delete-bin-line mr-0"></i></button>
                                     </div>

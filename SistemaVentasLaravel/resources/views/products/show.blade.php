@@ -20,11 +20,11 @@
                 <div class="card-body">
                     <div class=" row align-items-center">
                         <div class="form-group col-md-6">
-                            <label>Product Code</label>
+                            <label>Codigó del Producto</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->product_code }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Product Barcode</label>
+                            <label>Barcode del Producto</label>
                             {!! $barcode !!}
                         </div>
                     </div>
@@ -37,7 +37,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <div class="header-title">
-                        <h4 class="card-title">Information Product</h4>
+                        <h4 class="card-title">Información del Producto</h4>
                     </div>
                 </div>
 
@@ -55,15 +55,15 @@
 
                     <div class=" row align-items-center">
                         <div class="form-group col-md-12">
-                            <label>Product Name</label>
+                            <label>nombre del Producto</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->product_name }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Category</label>
+                            <label>Categoria</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->category->name }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Supplier</label>
+                            <label>proveedor</label>
                             <input type="text" class="form-control bg-white" value="{{  $product->supplier->name }}" readonly>
                         </div>
                         <div class="form-group col-md-6">
@@ -92,6 +92,9 @@
                         </div>
                     </div>
                     <!-- end: Show Data -->
+                    <div class="mt-2">
+                        <a class="btn bg-danger" href="{{ route('products.index') }}">Volver</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,12 +105,12 @@
 <script>
     $('#buying_date').datepicker({
         uiLibrary: 'bootstrap4',
-        format: 'yyyy-mm-dd'
+        format: 'dd--mm-yyyy'
         // https://gijgo.com/datetimepicker/configuration/format
     });
     $('#expire_date').datepicker({
         uiLibrary: 'bootstrap4',
-        format: 'yyyy-mm-dd'
+        format: 'dd-mm-yyyy'
         // https://gijgo.com/datetimepicker/configuration/format
     });
 </script>

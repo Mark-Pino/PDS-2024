@@ -45,7 +45,9 @@ Route::middleware('auth')->group(function () {
 
 // ====== USERS ======
 Route::middleware(['permission:user.menu'])->group(function () {
-    Route::resource('/users', UserController::class)->except(['show']);
+    Route::resource('/users',
+    UserController::class);
+    // ->except(['show'])
 });
 
 // ====== CUSTOMERS ======
@@ -65,7 +67,7 @@ Route::middleware(['permission:employee.menu'])->group(function () {
 
 // ====== EMPLOYEE ATTENDENCE ======
 Route::middleware(['permission:attendence.menu'])->group(function () {
-    Route::resource('/employee/attendence', AttendenceController::class)->except(['show', 'update', 'destroy']);
+    Route::resource('/employee/attendence', AttendenceController::class);
 });
 
 // ====== SALARY EMPLOYEE ======

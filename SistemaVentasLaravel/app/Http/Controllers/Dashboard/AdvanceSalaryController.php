@@ -28,9 +28,9 @@ class AdvanceSalaryController extends Controller
 
         return view('advance-salary.index', [
             'advance_salaries' => AdvanceSalary::with(['employee'])
+                ->sortable()
                 ->orderByDesc('date')
                 ->filter(request(['search']))
-                ->sortable()
                 ->paginate($row)
                 ->appends(request()->query()),
         ]);
@@ -73,9 +73,9 @@ class AdvanceSalaryController extends Controller
             $validatedData = $request->validate($rules);
             AdvanceSalary::create($validatedData);
 
-            return Redirect::route('advance-salary.create')->with('success', 'Advance Salary Paid Successfully!');
+            return Redirect::route('advance-salary.index')->with('success', 'Advance Salary Paid Successfully!');
         } else {
-            return Redirect::route('advance-salary.create')->with('warning', 'Advance Salary Already Paid!');
+            return Redirect::route('advance-salary.index')->with('warning', 'Advance Salary Already Paid!');
         }
     }
 
@@ -102,30 +102,39 @@ class AdvanceSalaryController extends Controller
      * Update the specified resource in storage.
      */
     public function update(Request $request, AdvanceSalary $advanceSalary)
-    {
-        $rules = [
-            'employee_id' => 'required',
-            'date' => 'required|date_format:Y-m-d|max:10|',
-            'advance_salary' => 'required|numeric'
-        ];
+{
+    $rules = [
+        'employee_id' => 'required',
+        'date' => 'required|date_format:Y-m-d|max:10',
+        'advance_salary' => 'required|numeric'
+    ];
 
-        // format date only shows the YM (year and month)
-        $newYm = Carbon::createFromFormat('Y-m-d', $request->date)->format('Y-m');
-        $oldYm = Carbon::createFromFormat('Y-m-d', $advanceSalary->date)->format('Y-m');
+    // Validamos los datos
+    $validatedData = $request->validate($rules);
 
-        $advanced = AdvanceSalary::where('employee_id', $request->id)
-            ->whereDate('date', 'LIKE',  $newYm . '%')
-            ->first();
+    // Formateamos la fecha para comparar año y mes (Y-m)
+    $newYm = Carbon::createFromFormat('Y-m-d', $request->date)->format('Y-m');
+    $oldYm = Carbon::createFromFormat('Y-m-d', $advanceSalary->date)->format('Y-m');
 
-        if (!$advanced && $newYm == $oldYm) {
-            $validatedData = $request->validate($rules);
-            AdvanceSalary::where('id', $advanceSalary->id)->update($validatedData);
+    // Verificamos si hay un registro adelantado en el mismo mes y empleado
+    $advanced = AdvanceSalary::where('employee_id', $request->employee_id) // Ojo aquí, usar $request->employee_id
+        ->where('id', '!=', $advanceSalary->id) // Ignorar el actual en la búsqueda
+        ->whereDate('date', 'LIKE', $newYm . '%')
+        ->first();
 
-            return Redirect::route('advance-salary.edit', $advanceSalary->id)->with('success', 'Advance Salary Updated Successfully!');
-        } else {
-            return Redirect::route('advance-salary.edit', $advanceSalary->id)->with('warning', 'Advance Salary Already Paid!');
-        }
+    // Si no hay adelanto en la misma fecha, actualizamos
+    if (!$advanced || $newYm == $oldYm) {
+        // Actualizamos el registro
+        $advanceSalary->update($validatedData);
+
+        return Redirect::route('advance-salary.index', $advanceSalary->id)
+            ->with('success', 'Advance Salary Updated Successfully!');
+    } else {
+        return Redirect::route('advance-salary.index', $advanceSalary->id)
+            ->with('warning', 'Advance Salary Already Paid for this month!');
     }
+}
+
 
     /**
      * Remove the specified resource from storage.

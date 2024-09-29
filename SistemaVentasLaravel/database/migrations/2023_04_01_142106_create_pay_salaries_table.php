@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->integer('employee_id');
             $table->date('date')->nullable();
-            $table->integer('paid_amount');
+            $table->integer('paid_amount')->nullable();
             $table->integer('advance_salary')->nullable();
-            $table->integer('due_salary');
+            $table->integer('due_salary')->nullable();
             $table->timestamps();
         });
     }

@@ -14,21 +14,21 @@
             @endif
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Role in Permission List</h4>
+                    <h4 class="mb-3">Lista de Permisos en Roles</h4>
                 </div>
                 <div>
-                    <a href="{{ route('rolePermission.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Add Role in Permission</a>
+                    <a href="{{ route('rolePermission.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Agregar Permisos en Rol</a>
                 </div>
             </div>
         </div>
 
         {{-- <div class="col-lg-12">
-            <form action="{{ route('customers.index') }}" method="get">
+            <form action="" method="get">
                 <div class="d-flex flex-wrap align-items-center justify-content-between">
                     <div class="form-group row">
-                        <label for="row" class="col-sm-3 align-self-center">Row:</label>
+                        <label for="row" class="col-sm-3 align-self-center">Filar:</label>
                         <div class="col-sm-9">
-                            <select class="form-control" name="row">
+                            <select class="form-control" name="row" onchange="this.form.submit()">
                                 <option value="10" @if(request('row') == '10')selected="selected"@endif>10</option>
                                 <option value="25" @if(request('row') == '25')selected="selected"@endif>25</option>
                                 <option value="50" @if(request('row') == '50')selected="selected"@endif>50</option>
@@ -57,10 +57,10 @@
                 <table class="table mb-0">
                     <thead class="bg-white text-uppercase">
                         <tr class="ligth ligth-data">
-                            <th>No.</th>
-                            <th>Role Name</th>
-                            <th>Permission Name</th>
-                            <th>Action</th>
+                            <th>#</th>
+                            <th>Rol</th>
+                            <th>Permiso</th>
+                            <th>Acción</th>
                         </tr>
                     </thead>
                     <tbody class="ligth-body">

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('employee_id');
             $table->date('date');
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

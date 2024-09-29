@@ -16,19 +16,18 @@ class Customer extends Model
         'email',
         'phone',
         'address',
-        'shopname',
+        // 'shopname',
         'photo',
-        'account_holder',
-        'account_number',
-        'bank_name',
-        'bank_branch',
+        // 'account_holder',
+        // 'account_number',
+        // 'bank_name',
+        // 'bank_branch',
         'city',
     ];
     public $sortable = [
         'name',
         'email',
         'phone',
-        'shopname',
         'city',
     ];
 
@@ -39,7 +38,7 @@ class Customer extends Model
     public function scopeFilter($query, array $filters)
     {
         $query->when($filters['search'] ?? false, function ($query, $search) {
-            return $query->where('name', 'like', '%' . $search . '%')->orWhere('shopname', 'like', '%' . $search . '%');
+            return $query->where('name', 'like', '%' . $search . '%');
         });
     }
 }

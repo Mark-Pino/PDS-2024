@@ -31,7 +31,7 @@
 
         <div class="col-lg-12">
             <form action="{{ route('order.stockManage') }}" method="get">
-                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center justify-content-between ml-1">
                     <div class="form-group row">
                         <label for="row" class="col-sm-3 align-self-center">Filas:</label>
                         <div class="col-sm-9">
@@ -45,12 +45,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="control-label col-sm-3 align-self-center" for="search">Buscar:</label>
-                        <div class="input-group col-sm-8">
-                            <input type="text" id="search" class="form-control" name="search" placeholder="Buscar Producto" value="{{ request('search') }}">
+                        <label class="control-label col-sm-2 align-self-center" for="search">Buscar:</label>
+                        <div class="input-group col-sm-10">
+                            <input type="text" id="search" class="form-control" name="search" placeholder="Producto" value="{{ request('search') }}">
                             <div class="input-group-append">
-                                <button type="submit" class="input-group-text bg-primary"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
-                                <a href="{{ route('order.stockManage') }}" class="input-group-text bg-danger"><i class="fa-solid fa-trash"></i></a>
+                                <button type="submit" class="input-group-text bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Buscar"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
+                                <a href="{{ route('order.stockManage') }}" class="input-group-text bg-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Borrar"><i class="fa-solid fa-trash"></i></a>
                             </div>
                         </div>
                     </div>

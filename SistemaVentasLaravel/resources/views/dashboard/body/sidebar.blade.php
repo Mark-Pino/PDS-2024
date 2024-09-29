@@ -88,7 +88,7 @@
                         </li>
                         <li class="{{ Request::is(['categories*']) ? 'active' : '' }}">
                             <a href="{{ route('categories.index') }}">
-                                <i class="fa-solid fa-arrow-right"></i><span>Categorias</span>
+                                <i class="fa-solid fa-arrow-right"></i><span>Categorías</span>
                             </a>
                         </li>
                     </ul>
@@ -137,17 +137,17 @@
 
                         <li class="{{ Request::is(['advance-salary', 'advance-salary/*/edit']) ? 'active' : '' }}">
                             <a href="{{ route('advance-salary.index') }}">
-                                <i class="fa-solid fa-arrow-right"></i><span>Sueldos Adelantados</span>
+                                <i class="fa-solid fa-arrow-right"></i><span>Adelantos de Sueldos</span>
                             </a>
                         </li>
                         <li class="{{ Request::is('advance-salary/create*') ? 'active' : '' }}">
                             <a href="{{ route('advance-salary.create') }}">
-                                <i class="fa-solid fa-arrow-right"></i><span>Crear Sueldo Adelantado</span>
+                                <i class="fa-solid fa-arrow-right"></i><span>Crear Adelanto de Sueldo</span>
                             </a>
                         </li>
                         <li class="{{ Request::is('pay-salary') ? 'active' : '' }}">
                             <a href="{{ route('pay-salary.index') }}">
-                                <i class="fa-solid fa-arrow-right"></i><span>Pagar Sueldo</span>
+                                <i class="fa-solid fa-arrow-right"></i><span>Sueldos Pagados</span>
                             </a>
                         </li>
                         <li class="{{ Request::is('pay-salary/history*') ? 'active' : '' }}">
@@ -209,7 +209,7 @@
                         </li>
                         <li class="{{ Request::is(['role/permission*']) ? 'active' : '' }}">
                             <a href="{{ route('rolePermission.index') }}">
-                                <i class="fa-solid fa-arrow-right"></i><span>Rol en Permisos</span>
+                                <i class="fa-solid fa-arrow-right"></i><span>Permisos en Roles</span>
                             </a>
                         </li>
                     </ul>

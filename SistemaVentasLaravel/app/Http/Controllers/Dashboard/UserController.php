@@ -25,7 +25,10 @@ class UserController extends Controller
         }
 
         return view('users.index', [
-            'users' => User::filter(request(['search']))->sortable()->paginate($row)->appends(request()->query()),
+            'users' => User::filter(request(['search']))
+            ->sortable()
+            ->paginate($row)
+            ->appends(request()->query()),
         ]);
     }
 
@@ -77,11 +80,13 @@ class UserController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Mostrar el recurso especificado.
      */
     public function show(User $user)
     {
-        //
+        return view('users.show', [
+            'user' => $user,
+        ]);
     }
 
     /**

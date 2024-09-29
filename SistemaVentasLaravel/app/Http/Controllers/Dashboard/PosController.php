@@ -24,7 +24,8 @@ class PosController extends Controller
         return view('pos.index', [
             'customers' => Customer::all()->sortBy('name'),
             'productItem' => Cart::content(),
-            'products' => Product::where('expire_date', '>', $todayDate)->filter(request(['search']))
+            'products' => Product::where('expire_date', '>', $todayDate)
+            ->filter(request(['search']))
                 ->sortable()
                 ->paginate($row)
                 ->appends(request()->query()),

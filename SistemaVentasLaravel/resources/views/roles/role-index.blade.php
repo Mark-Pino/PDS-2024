@@ -14,12 +14,11 @@
             @endif
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Role List</h4>
-                    <p class="mb-0">A role dashboard lets you easily gather and visualize role data from optimizing <br>
-                        the role experience, ensuring role retention. </p>
+                    <h4 class="mb-3">Lista de Roles</h4>
+                    <p class="mb-3 mr-3">Un panel de control de roles te permite recopilar y visualizar fácilmente <br> datos de roles para optimizar la experiencia de los roles, asegurando su retención.</p>
                 </div>
                 <div>
-                    <a href="{{ route('role.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Add Role</a>
+                    <a href="{{ route('role.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Agregar Rol</a>
                 </div>
             </div>
         </div>
@@ -55,13 +54,13 @@
         </div> --}}
 
         <div class="col-lg-12">
-            <div class="table-responsive rounded mb-3">
-                <table class="table mb-0">
+            <div class="table-responsive rounded mb-3 mr-0 ml-0">
+                <table class="table table-sm mb-0 mr-0 ml-0">
                     <thead class="bg-white text-uppercase">
                         <tr class="ligth ligth-data">
-                            <th>No.</th>
-                            <th>Role Name</th>
-                            <th>Action</th>
+                            <th class="col-1">#</th>
+                            <th class="col-9">Nombre del Rol</th>
+                            <th class="col-9">Acción</th>
                         </tr>
                     </thead>
                     <tbody class="ligth-body">
@@ -74,10 +73,10 @@
                                     @method('delete')
                                     @csrf
                                     <div class="d-flex align-items-center list-action">
-                                        <a class="btn btn-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
-                                            href="{{ route('role.edit', $role->id) }}""><i class="ri-pencil-line mr-0"></i>
+                                        <a class="btn btn-success mr-2" data-toggle="tooltip" data-placement="top" title="Edit"
+                                            href="{{ route('role.edit', $role->id) }}"><i class="ri-pencil-line mr-0"></i>
                                         </a>
-                                        <button type="submit" class="btn btn-warning mr-2 border-none" onclick="return confirm('Are you sure you want to delete this record?')" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="ri-delete-bin-line mr-0"></i></button>
+                                        <button type="submit" class="btn btn-warning mr-2 border-none" onclick="return confirm('Are you sure you want to delete this record?')" data-toggle="tooltip" data-placement="top" title="Delete"><i class="ri-delete-bin-line mr-0"></i></button>
                                     </div>
                                 </form>
                             </td>
@@ -88,6 +87,9 @@
             </div>
             {{ $roles->links() }}
         </div>
+
+
+
     </div>
     <!-- Page end  -->
 </div>

@@ -12,20 +12,19 @@
                     </button>
                 </div>
             @endif
-            <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
+            <div class="d-flex flex-wrap align-items-center justify-content-between mb-3">
                 <div>
                     <h4 class="mb-3">Lista de Usuarios</h4>
                 </div>
                 <div>
                 <a href="{{ route('users.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Crear Usuario</a>
-                <a href="{{ route('users.index') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i>Borrar búsqueda</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-12">
             <form action="{{ route('users.index') }}" method="get">
-                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center justify-content-between ml-1">
                     <div class="form-group row">
                         <label for="row" class="col-sm-3 align-self-center">Filas:</label>
                         <div class="col-sm-9">
@@ -39,13 +38,13 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="control-label col-sm-3 align-self-center" for="search">Buscar:</label>
-                        <div class="col-sm-8">
-                            <div class="input-group">
-                                <input type="text" id="search" class="form-control" name="search" placeholder="Buscar Usuario" value="{{ request('search') }}">
-                                <div class="input-group-append">
-                                    <button type="submit" class="input-group-text bg-primary"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
-                                </div>
+                        <label class="control-label col-sm-2 align-self-center " for="search">Buscar:</label>
+                        <div class="input-group col-sm-10">
+                            <input type="text" id="search" class="form-control" name="search" placeholder="Usuario" value="{{ request('search') }}">
+                            <div class="input-group-append">
+                                <button type="submit" class="input-group-text bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Buscar"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
+                                <a href="{{ route('users.index') }}" class="input-group-text bg-danger"
+                                data-toggle="tooltip" data-placement="top" title="" data-original-title="Borrar"><i class="fa-solid fa-trash"></i></a>
                             </div>
                         </div>
                     </div>
@@ -82,19 +81,22 @@
                                     <span class="badge
                                         @switch($role->name)
                                             @case('SuperAdmin')
-                                                bg-danger
+                                                bg-indigo
                                                 @break
                                             @case('Admin')
-                                                bg-warning
+                                                bg-pink
                                                 @break
                                             @case('Gerente')
-                                                bg-success
+                                                bg-warning
+                                                @break
+                                            @case('Empleado')
+                                                bg-teal
                                                 @break
                                             @case('Usuario')
-                                                bg-info
+                                                bg-skyblue
                                                 @break
                                             @default
-                                                bg-secondary
+                                                bg-light
                                         @endswitch
                                     ">
                                         {{ $role->name }}
@@ -106,9 +108,11 @@
                                     @method('delete')
                                     @csrf
                                     <div class="d-flex align-items-center list-action">
-                                        {{-- <a class="btn btn-info mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="View"
+                                        {{-- OPCIONAL --}}
+                                        <a class="btn btn-info mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ver"
                                             href="{{ route('users.show', $item->username) }}"><i class="ri-eye-line mr-0"></i>
-                                        </a> --}}
+                                        </a>
+                                        {{-- END --}}
                                         <a class="btn btn-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Editar" href="{{ route('users.edit', $item->username) }}"><i class="ri-pencil-line mr-0"></i>
                                         </a>
                                         <button type="submit" class="btn btn-warning mr-2 border-none" onclick="return confirm('¿Está seguro de que desea eliminar este registro?')" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliminar"><i class="ri-delete-bin-line mr-0"></i></button>

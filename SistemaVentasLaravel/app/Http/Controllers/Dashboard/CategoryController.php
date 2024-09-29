@@ -93,7 +93,8 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        Category::destroy($category->slug);
+        $category = Category::where('slug', $category->slug)->firstOrFail();
+        Category::destroy($category->id);
 
         return Redirect::route('categories.index')->with('success', 'Category has been deleted!');
     }

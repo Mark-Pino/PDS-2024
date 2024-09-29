@@ -39,7 +39,7 @@
                                 <div class="input-group">
                                     <input type="number" class="form-control" name="qty" required value="{{ old('qty', $item->qty) }}">
                                     <div class="input-group-append">
-                                        <button type="submit" class="btn btn-success border-none" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sumbit"><i class="fas fa-check"></i></button>
+                                        <button type="submit" class="btn btn-success border-none" data-toggle="tooltip" data-placement="top" title="" data-original-title="Enviar"><i class="fas fa-check"></i></button>
                                     </div>
                                 </div>
                             </form>
@@ -47,7 +47,7 @@
                         <td>{{ $item->price }}</td>
                         <td>{{ $item->subtotal }}</td>
                         <td>
-                            <a href="{{ route('pos.deleteCart', $item->rowId) }}" class="btn btn-danger border-none" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa-solid fa-trash mr-0"></i></a>
+                            <a href="{{ route('pos.deleteCart', $item->rowId) }}" class="btn btn-danger border-none" data-toggle="tooltip" data-placement="top" title="" data-original-title="Borrar"><i class="fa-solid fa-trash mr-0"></i></a>
                         </td>
                     </tr>
                     @endforeach
@@ -103,9 +103,9 @@
                     <form action="#" method="get">
                         <div class="d-flex flex-wrap align-items-center justify-content-between">
                             <div class="form-group row">
-                                <label for="row" class="align-self-center mx-2">Fila:</label>
+                                <label for="row" class="align-self-center mx-2">Filas:</label>
                                 <div>
-                                    <select class="form-control" name="row">
+                                    <select class="form-control" name="row" onchange="this.form.submit()">
                                         <option value="10" @if(request('row') == '10')selected="selected"@endif>10</option>
                                         <option value="25" @if(request('row') == '25')selected="selected"@endif>25</option>
                                         <option value="50" @if(request('row') == '50')selected="selected"@endif>50</option>
@@ -116,11 +116,11 @@
 
                             <div class="form-group row">
                                 <label class="control-label col-sm-3 align-self-center" for="search">Buscar:</label>
-                                <div class="input-group col-sm-8">
-                                    <input type="text" id="search" class="form-control" name="search" placeholder="Buscar Producto" value="{{ request('search') }}">
+                                <div class="input-group col-sm-9">
+                                    <input type="text" id="search" class="form-control" name="search" placeholder="Producto" value="{{ request('search') }}">
                                     <div class="input-group-append">
-                                        <button type="submit" class="input-group-text bg-primary"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
-                                        <a href="{{ route('products.index') }}" class="input-group-text bg-danger"><i class="fa-solid fa-trash"></i></a>
+                                        <button type="submit" class="input-group-text bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Buscar"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
+                                        <a href="{{ route('pos.index') }}" class="input-group-text bg-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Borrar"><i class="fa-solid fa-trash"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +155,7 @@
                                             <input type="hidden" name="name" value="{{ $product->product_name }}">
                                             <input type="hidden" name="price" value="{{ $product->selling_price }}">
 
-                                            <button type="submit" class="btn btn-primary border-none" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add"><i class="far fa-plus mr-0"></i></button>
+                                            <button type="submit" class="btn btn-primary border-none" data-toggle="tooltip" data-placement="top" title="" data-original-title="Agregar"><i class="far fa-plus mr-0"></i></button>
                                         </form>
                                     </td>
                                 </tr>

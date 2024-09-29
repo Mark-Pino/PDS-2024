@@ -30,6 +30,24 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@gmail.com',
         ]);
 
+        $admin2 = \App\Models\User::factory()->create([
+            'name' => 'Admin2',
+            'username' => 'admin2',
+            'email' => 'admin2@gmail.com',
+        ]);
+
+        $manager = \App\Models\User::factory()->create([
+            'name' => 'Gerente',
+            'username' => 'gerente',
+            'email' => 'gerente@gmail.com',
+        ]);
+
+        $employee = \App\Models\User::factory()->create([
+            'name' => 'Empleado',
+            'username' => 'empleado',
+            'email' => 'empleado@gmail.com',
+        ]);
+
         $user = \App\Models\User::factory()->create([
             'name' => 'User',
             'username' => 'user',
@@ -70,10 +88,14 @@ class DatabaseSeeder extends Seeder
 
         Role::create(['name' => 'SuperAdmin'])->givePermissionTo(Permission::all());
         Role::create(['name' => 'Admin'])->givePermissionTo(['customer.menu', 'user.menu', 'supplier.menu']);
-        Role::create(['name' => 'Usuario'])->givePermissionTo(['customer.menu', 'user.menu', 'supplier.menu']);
         Role::create(['name' => 'Gerente'])->givePermissionTo(['stock.menu', 'orders.menu', 'product.menu', 'salary.menu', 'employee.menu']);
+        Role::create(['name' => 'Empleado'])->givePermissionTo(['customer.menu', 'user.menu', 'supplier.menu']);
+        Role::create(['name' => 'Usuario'])->givePermissionTo(['customer.menu', 'user.menu', 'supplier.menu']);
 
         $admin->assignRole('SuperAdmin');
+        $admin2->assignRole('Admin');
+        $manager->assignRole('Gerente');
+        $employee->assignRole('Empleado');
         $user->assignRole('Usuario');
     }
 }

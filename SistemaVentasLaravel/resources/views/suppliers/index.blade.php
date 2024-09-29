@@ -15,19 +15,18 @@
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
                     <h4 class="mb-3">Lista de Proveedores</h4>
-                    <p class="mb-0">Un panel de proveedores le permite recopilar y visualizar fácilmente datos de proveedores optimizando <br>
-                        la experiencia del proveedor, asegurando su retención.<p></p></p>
+                    <p class="mb-2 mr-3">Un panel de proveedores le permite recopilar y visualizar fácilmente <br> datos de proveedores optimizando
+                        la experiencia del proveedor, asegurando su retención.</p>
                 </div>
                 <div>
-                    <a href="{{ route('suppliers.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Agregar Proveedor</a>
-                    <a href="{{ route('suppliers.index') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i>Borrar Búsqueda</a>
+                    <a href="{{ route('suppliers.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3 mx-0"></i>Agregar Proveedor</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-12">
             <form action="{{ route('suppliers.index') }}" method="get">
-                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="d-flex flex-wrap align-items-center justify-content-between ml-1">
                     <div class="form-group row">
                         <label for="row" class="col-sm-3 align-self-center">Filas:</label>
                         <div class="col-sm-9">
@@ -41,13 +40,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="control-label col-sm-3 align-self-center" for="search">Buscar:</label>
-                        <div class="col-sm-8">
-                            <div class="input-group">
-                                <input type="text" id="search" class="form-control" name="search" placeholder="Buscar Proveedor" value="{{ request('search') }}">
-                                <div class="input-group-append">
-                                    <button type="submit" class="input-group-text bg-primary"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
-                                </div>
+                        <label class="control-label col-sm-2 align-self-center " for="search">Buscar:</label>
+                        <div class="input-group col-sm-10">
+                            <input type="text" id="search" class="form-control" name="search" placeholder="Proveedor" value="{{ request('search') }}">
+                            <div class="input-group-append">
+                                <button type="submit" class="input-group-text bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Buscar"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
+                                <a href="{{ route('suppliers.index') }}" class="input-group-text bg-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Borrar"><i class="fa-solid fa-trash"></i></a>
                             </div>
                         </div>
                     </div>

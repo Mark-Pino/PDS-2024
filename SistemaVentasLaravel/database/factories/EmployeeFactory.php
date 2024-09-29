@@ -21,8 +21,9 @@ class EmployeeFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'phone' => fake()->unique()->phoneNumber(),
             'address' => fake()->address(),
-            'experience' => fake()->randomElement(['0 Year', '1 Year', '2 Year', '3 Year', '4 Year', '5 Year']),
+            'experience' => fake()->randomElement(['0 Años', '1 Año', '2 Años', '3 Años', '4 Años', '5 Años', '6 Años' ,'7 Años', '8 Años', '9 Años', '10 Años']),
             'salary' => fake()->randomNumber(3, true),
+            'vacation' => fake()->randomDigit() ,
             'city' => fake()->city(),
         ];
     }

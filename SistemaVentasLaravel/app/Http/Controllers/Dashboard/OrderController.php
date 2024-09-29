@@ -27,10 +27,11 @@ class OrderController extends Controller
             abort(400, 'The per-page parameter must be an integer between 1 and 100.');
         }
 
-        $orders = Order::where('order_status', 'pending')->sortable()->paginate($row);
-
         return view('orders.pending-orders', [
-            'orders' => $orders
+            'orders' => Order::where('order_status', 'pending')
+            ->sortable()
+            ->filter(request(['search']))
+            ->paginate($row),
         ]);
     }
 
