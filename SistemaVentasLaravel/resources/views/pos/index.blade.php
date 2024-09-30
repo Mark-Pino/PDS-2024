@@ -22,11 +22,11 @@
             <table class="table">
                 <thead>
                     <tr class="ligth">
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">SubTotal</th>
-                        <th scope="col">Acción</th>
+                        <th class="col-1">Nombre</th>
+                        <th class="col-1">Cantidad</th>
+                        <th class="col-1">Precio</th>
+                        <th class="col-1">SubTotal</th>
+                        <th class="col-1">Acción</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -132,8 +132,8 @@
                         <table class="table mb-0">
                             <thead class="bg-white text-uppercase">
                                 <tr class="ligth ligth-data">
-                                    <th>#</th>
-                                    <th>Foto</th>
+                                    <th class="col-1">#</th>
+                                    <th class="col-1">Foto</th>
                                     <th>@sortablelink('product_name', 'Nombre')</th>
                                     <th>@sortablelink('selling_price', 'Precio')</th>
                                     <th>Acción</th>

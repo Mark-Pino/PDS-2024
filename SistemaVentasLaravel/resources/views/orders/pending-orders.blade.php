@@ -16,7 +16,6 @@
                 <div>
                     <h4 class="mb-3">Lista de Pedidos Pendientes</h4>
                 </div>
-
             </div>
         </div>
 
@@ -59,7 +58,10 @@
                             <th>@sortablelink('invoice_no', 'Factura')</th>
                             <th>@sortablelink('customer_id', 'Cliente')</th>
                             <th>@sortablelink('order_date', 'Fecha')</th>
-                            <th>Pago</th>
+                            <th>@sortablelink('payment_status', 'Tipo de Pago')</th>
+                            <th>@sortablelink('total_products', 'Productos')</th>
+                            <th>@sortablelink('pay', 'Pagado')</th>
+                            <th>@sortablelink('due', 'Pendiente')</th>
                             <th>@sortablelink('total')</th>
                             <th>Estado</th>
                             <th>Acción</th>
@@ -73,14 +75,17 @@
                             <td>{{ $order->customer->name }}</td>
                             <td>{{ $order->order_date }}</td>
                             <td>{{ $order->payment_status }}</td>
+                            <td>{{ $order->total_products }}</td>
+                            <td>{{ $order->pay }}</td>
+                            <td>{{ $order->due }}</td>
                             <td>{{ $order->total }}</td>
                             <td>
                                 <span class="badge badge-danger">{{ $order->order_status }}</span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center list-action">
-                                    <a class="btn btn-info mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Details"
-                                        href="{{ route('order.orderDetails', $order->id) }}">Details
+                                    <a class="btn btn-info mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Detalles"
+                                        href="{{ route('order.orderDetails', $order->id) }}">Detalles
                                     </a>
                                 </div>
                             </td>

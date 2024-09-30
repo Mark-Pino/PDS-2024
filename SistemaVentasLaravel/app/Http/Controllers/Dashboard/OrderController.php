@@ -28,7 +28,7 @@ class OrderController extends Controller
         }
 
         return view('orders.pending-orders', [
-            'orders' => Order::where('order_status', 'pending')
+            'orders' => Order::where('order_status', 'Pendiente')
             ->sortable()
             ->filter(request(['search']))
             ->paginate($row),
@@ -43,10 +43,12 @@ class OrderController extends Controller
             abort(400, 'The per-page parameter must be an integer between 1 and 100.');
         }
 
-        $orders = Order::where('order_status', 'complete')->sortable()->paginate($row);
 
         return view('orders.complete-orders', [
-            'orders' => $orders
+            'orders' => Order::where('order_status', 'Completo')
+            ->sortable()
+            ->filter(request(['search']))
+            ->paginate($row)
         ]);
     }
 
@@ -83,12 +85,12 @@ class OrderController extends Controller
             'table' => 'orders',
             'field' => 'invoice_no',
             'length' => 10,
-            'prefix' => 'INV-'
+            'prefix' => 'FAC-'
         ]);
 
         $validatedData = $request->validate($rules);
         $validatedData['order_date'] = Carbon::now()->format('Y-m-d');
-        $validatedData['order_status'] = 'pending';
+        $validatedData['order_status'] = 'Pendiente';
         $validatedData['total_products'] = Cart::count();
         $validatedData['sub_total'] = Cart::subtotal();
         $validatedData['vat'] = Cart::tax();
@@ -152,7 +154,7 @@ class OrderController extends Controller
                     ->update(['product_store' => DB::raw('product_store-'.$product->quantity)]);
         }
 
-        Order::findOrFail($order_id)->update(['order_status' => 'complete']);
+        Order::findOrFail($order_id)->update(['order_status' => 'Completo']);
 
         return Redirect::route('order.pendingOrders')->with('success', 'Order has been completed!');
     }
@@ -181,6 +183,7 @@ class OrderController extends Controller
         }
 
         $orders = Order::where('due', '>', '0')
+            ->filter(request(['search']))
             ->sortable()
             ->paginate($row);
 

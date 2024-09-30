@@ -42,17 +42,17 @@
                     </a>
                     <ul id="orders" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
 
-                        <li class="{{ Request::is('orders/pending*') ? 'active' : '' }}">
+                        <li class="{{ Request::is('orders/Pendiente*') ? 'active' : '' }}">
                             <a href="{{ route('order.pendingOrders') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Pedidos Pendientes</span>
                             </a>
                         </li>
-                        <li class="{{ Request::is('orders/complete*') ? 'active' : '' }}">
+                        <li class="{{ Request::is('orders/Completo*') ? 'active' : '' }}">
                             <a href="{{ route('order.completeOrders') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Pedidos completos</span>
                             </a>
                         </li>
-                        <li class="{{ Request::is('pending/due*') ? 'active' : '' }}">
+                        <li class="{{ Request::is('pending/Deuda*') ? 'active' : '' }}">
                             <a href="{{ route('order.pendingDue') }}">
                                 <i class="fa-solid fa-arrow-right"></i><span>Pagos Pendientes</span>
                             </a>

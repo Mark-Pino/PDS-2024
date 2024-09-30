@@ -27,10 +27,12 @@ class Order extends Model
     public $sortable = [
         'customer_id',
         'order_date',
+        'total_products',
         'invoice_no',
         'pay',
-        'due',
         'total',
+        'payment_status',
+        'due',
     ];
 
     protected $guarded = [

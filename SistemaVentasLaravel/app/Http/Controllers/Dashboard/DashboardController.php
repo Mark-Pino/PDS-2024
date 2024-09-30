@@ -13,7 +13,7 @@ class DashboardController extends Controller
         return view('dashboard.index', [
             'total_paid' => Order::sum('pay'),
             'total_due' => Order::sum('due'),
-            'complete_orders' => Order::where('order_status', 'complete')->get(),
+            'complete_orders' => Order::where('order_status', 'Completo')->get(),
             'products' => Product::orderBy('product_store')->take(5)->get(),
             'new_products' => Product::orderBy('buying_date')->take(2)->get(),
         ]);

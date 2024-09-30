@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <title>POS</title>
+    <title>Punto de Venta🤑</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}"/>
 
     <!-- External CSS libraries -->
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/invoice/css/bootstrap.min.css') }}">
@@ -39,31 +42,31 @@
                             <div class="row">
                                 <div class="col-sm-6 mb-50">
                                     <div class="invoice-number">
-                                        <h4 class="inv-title-1">Invoice date:</h4>
+                                        <h4 class="inv-title-1">Fecha de la Factura:</h4>
                                         <p class="invo-addr-1">
                                             {{ $order->order_date }}
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 text-end mb-50">
-                                    <h4 class="inv-title-1">POS</h4>
-                                    <p class="inv-from-1">pos@example.com</p>
-                                    <p class="inv-from-2">Cirebon, Indonesia</p>
+                                    <h4 class="inv-title-1">UPeU</h4>
+                                    <p class="inv-from-1">upeu@upeu.edu.pe</p>
+                                    <p class="inv-from-2">Juliaca, Peru</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 mb-50">
-                                    <h4 class="inv-title-1">Customer</h4>
+                                    <h4 class="inv-title-1">Cliente</h4>
                                     <p class="inv-from-1">{{ $order->customer->name }}</p>
                                     <p class="inv-from-1">{{ $order->customer->email }}</p>
                                     <p class="inv-from-1">{{ $order->customer->phone }}</p>
                                     <p class="inv-from-2">{{ $order->customer->address }}</p>
                                 </div>
                                 <div class="col-sm-6 text-end mb-50">
-                                    <h4 class="inv-title-1">Details</h4>
-                                    <p class="inv-from-1">Payment Status: {{ $order->payment_status }}</p>
-                                    <p class="inv-from-1">Total Pay: ${{ $order->pay }}</p>
-                                    <p class="inv-from-1">Due: ${{ $order->due }}</p>
+                                    <h4 class="inv-title-1">Detalles</h4>
+                                    <p class="inv-from-1">Tipo de Pago: {{ $order->payment_status }}</p>
+                                    <p class="inv-from-1">Total pagado: ${{ $order->pay }}</p>
+                                    <p class="inv-from-1">Deuda: ${{ $order->due }}</p>
                                 </div>
                             </div>
                         </div>
@@ -72,10 +75,10 @@
                                 <table class="default-table invoice-table">
                                     <thead>
                                     <tr>
-                                        <th>Description</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        <th>Total (+Vat)</th>
+                                        <th>Descrición</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Total (+Impuestos)</th>
                                     </tr>
                                     </thead>
 
@@ -98,21 +101,21 @@
                                 </table>
                             </div>
                         </div>
-                        {{-- <div class="invoice-informeshon-footer">
+                        <div class="invoice-informeshon-footer">
                             <ul>
                                 <li><a href="https://themeforest.net/user/themevessel/portfolio">www.themevessel.com</a></li>
-                                <li><a href="mailto:sales@hotelempire.com">info@themevessel.com</a></li>
-                                <li><a href="tel:+088-01737-133959">+088 01737 133959</a></li>
+                                <li><a href="mailto:mark.pino@upeu.edu.pe">mark.pino@upeu.edu.pe</a></li>
+                                <li><a href="tel:974 981 999">+51 974 981 999</a></li>
                             </ul>
-                        </div> --}}
+                        </div>
                     </div>
 
                     <div class="invoice-btn-section clearfix d-print-none">
                         <a href="javascript:window.print()" class="btn btn-lg btn-print">
-                            Print Invoice
+                            Imprimir Factura
                         </a>
                         <a id="invoice_download_btn" class="btn btn-lg btn-download">
-                            Download Invoice
+                            Descargar Factura
                         </a>
                     </div>
                 </div>

@@ -32,12 +32,12 @@
 
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label for="payment_status">Pago</label>
+                                                    <label for="payment_status">Tipo de Pago</label>
                                                     <select class="form-control @error('payment_status') is-invalid @enderror" name="payment_status">
                                                         <option selected="" disabled="">--Seleccionar Pago--</option>
-                                                        <option value="HandCash">Dinero en efectivo</option>
+                                                        <option value="Efectivo">Efectivo</option>
                                                         <option value="Cheque">Cheque</option>
-                                                        <option value="Due">Adeudado</option>
+                                                        {{-- <option value="Deber">Deber</option> --}}
                                                     </select>
                                                     @error('payment_status')
                                                     <div class="invalid-feedback">

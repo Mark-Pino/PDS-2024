@@ -110,15 +110,15 @@ Route::middleware(['permission:pos.menu'])->group(function () {
 
 // ====== ORDERS ======
 Route::middleware(['permission:orders.menu'])->group(function () {
-    Route::get('/orders/pending', [OrderController::class, 'pendingOrders'])->name('order.pendingOrders');
-    Route::get('/orders/complete', [OrderController::class, 'completeOrders'])->name('order.completeOrders');
+    Route::get('/orders/Pendiente', [OrderController::class, 'pendingOrders'])->name('order.pendingOrders');
+    Route::get('/orders/Completo', [OrderController::class, 'completeOrders'])->name('order.completeOrders');
     Route::get('/orders/details/{order_id}', [OrderController::class, 'orderDetails'])->name('order.orderDetails');
     Route::put('/orders/update/status', [OrderController::class, 'updateStatus'])->name('order.updateStatus');
     Route::get('/orders/invoice/download/{order_id}', [OrderController::class, 'invoiceDownload'])->name('order.invoiceDownload');
 
     // Pending Due
-    Route::get('/pending/due', [OrderController::class, 'pendingDue'])->name('order.pendingDue');
-    Route::get('/order/due/{id}', [OrderController::class, 'orderDueAjax'])->name('order.orderDueAjax');
+    Route::get('/pending/Deuda', [OrderController::class, 'pendingDue'])->name('order.pendingDue');
+    Route::get('/order/Deuda/{id}', [OrderController::class, 'orderDueAjax'])->name('order.orderDueAjax');
     Route::post('/update/due', [OrderController::class, 'updateDue'])->name('order.updateDue');
 
     // Stock Management
