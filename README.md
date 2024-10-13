@@ -6,3 +6,8 @@
 ### Capturas de Pantalla
 ![image](https://github.com/user-attachments/assets/eb1c0a49-4355-4d4d-bd49-af717398eed9)
 ![image](https://github.com/user-attachments/assets/945008f0-5f94-4da2-879a-e87747031694)
+## Clase 30/09/2024
+### Capturas de Pantalla
+
+## Clase 07/09/2024
+### Capturas de Pantalla
