@@ -1,4 +1,7 @@
 # PDS-2024
+## Clase 14/09/2024
+### Capturas de Pantalla
+
 ## Clase 07/09/2024
 ### Captura de Pantalla
 ![image](https://github.com/user-attachments/assets/e682fd1d-0c1a-45be-89b8-6e2b5a7709f9)
