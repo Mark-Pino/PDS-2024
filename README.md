@@ -1,4 +1,8 @@
 # PDS-2024
+## Evaluación de la Unidad 2
+### Capturas de pantalla
+![image](https://github.com/user-attachments/assets/178bd5d0-3213-4342-abf0-d7d00d2689c2)
+![image](https://github.com/user-attachments/assets/4e7db08d-1833-443c-a37a-90b130f8f003)
 ## Clase 14/09/2024
 ### Capturas de Pantalla
 ![image](https://github.com/user-attachments/assets/176b035f-8a75-44e9-9a8c-042501186a85)
