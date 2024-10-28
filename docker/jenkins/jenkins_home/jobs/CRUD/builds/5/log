@@ -1,0 +1,499 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/CRUD
+The recommended git tool is: NONE
+using credential githubtoken2
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/CRUD/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://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@github.com/Mark-Pino/CRUD.git # timeout=10
+Fetching upstream changes from https://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@github.com/Mark-Pino/CRUD.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_ASKPASS to set credentials githubtoken2
+ > git fetch --tags --force --progress -- https://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@github.com/Mark-Pino/CRUD.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 71a73fcb2ee2ee67635278e37469a50fdd472380 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 71a73fcb2ee2ee67635278e37469a50fdd472380 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk bf58dd8bffe8bc4da9e0169613337443947a6d5a # timeout=10
+[CRUD] $ /bin/sh -xe /tmp/jenkins13013602833374894393.sh
++ composer install
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Nothing to install, update or remove
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+
+  [37;44m INFO [39;49m Discovering packages.  
+
+  laravel/sail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/sanctum [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/tinker [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nesbot/carbon [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nunomaduro/collision [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  spatie/laravel-ignition [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+
+82 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+[CRUD] $ /bin/sh -xe /tmp/jenkins9327836791844960806.sh
++ export DB_CONNECTION=mysql
++ export DB_HOST=192.168.1.36
++ export DB_PORT=3306
++ export DB_DATABASE=venta
++ export DB_USERNAME=mark
++ export DB_PASSWORD=mark
++ php artisan migrate --force
+
+   INFO  Nothing to migrate.  
+
+[CRUD] $ /bin/sh -xe /tmp/jenkins11999693069851234198.sh
++ export DB_CONNECTION=mysql
++ export DB_HOST=192.168.1.36
++ export DB_PORT=3306
++ export DB_DATABASE=venta
++ export DB_USERNAME=mark
++ export DB_PASSWORD=mark
++ php artisan test
+
+   PASS  Tests\Unit\ExampleTest
+  ✓ that true is true                                                    0.15s  
+
+   PASS  Tests\Unit\PruebasTest
+  ✓ suma correcta                                                        0.13s  
+
+   FAIL  Tests\Feature\CategoriaControllerTest
+  ⨯ puede mostrar el índice de categorias                                8.29s  
+  ⨯ puede almacenar una categoria                                        0.26s  
+  ⨯ puede editar una categoria                                           0.60s  
+  ⨯ puede actualizar una categoria                                       0.21s  
+  ⨯ puede eliminar una categoria                                         0.21s  
+
+   FAIL  Tests\Feature\ClienteControllerTest
+  ⨯ puede mostrar el índice de clientes                                  0.22s  
+  ⨯ puede almacenar un cliente                                           0.20s  
+  ⨯ puede editar un cliente                                              0.18s  
+  ⨯ puede actualizar un cliente                                          0.18s  
+  ⨯ puede eliminar un cliente                                            0.19s  
+
+   FAIL  Tests\Feature\EmpleadosControllerTest
+  ⨯ puede listar empleados                                               0.34s  
+  ⨯ puede registrar nuevo empleado                                       0.30s  
+  ⨯ puede mostrar detalles del empleado                                  0.22s  
+  ⨯ puede actualizar empleado                                            0.21s  
+  ⨯ puede mostrar la vista de edicion del empleado                       0.21s  
+  ⨯ puede eliminar empleado                                              0.21s  
+
+   FAIL  Tests\Feature\ExampleTest
+  ⨯ the application returns a successful response                        0.67s  
+
+   FAIL  Tests\Feature\ProductoControllerTest
+  ⨯ puede mostrar el indice de productos                                 0.32s  
+  ⨯ puede almacenar un producto                                          0.28s  
+  ⨯ puede editar un producto                                             0.34s  
+  ⨯ puede actualizar un producto                                         0.32s  
+  ⨯ puede eliminar un producto                                           0.23s  
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\CategoriaControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/CategoriaControllerTest.php:20
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\CategoriaControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/CategoriaControllerTest.php:37
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\CategoriaControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/CategoriaControllerTest.php:54
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\CategoriaControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/CategoriaControllerTest.php:75
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\CategoriaControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/CategoriaControllerTest.php:92
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ClienteControllerTest > pue…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ClienteControllerTest.php:24
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ClienteControllerTest > pue…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ClienteControllerTest.php:42
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ClienteControllerTest > pue…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ClienteControllerTest.php:59
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ClienteControllerTest > pue…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ClienteControllerTest.php:81
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ClienteControllerTest > pue…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ClienteControllerTest.php:98
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\EmpleadosControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/EmpleadosControllerTest.php:21
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\EmpleadosControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/EmpleadosControllerTest.php:44
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\EmpleadosControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/EmpleadosControllerTest.php:64
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\EmpleadosControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/EmpleadosControllerTest.php:93
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\EmpleadosControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/EmpleadosControllerTest.php:110
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\EmpleadosControllerTest > p…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/EmpleadosControllerTest.php:129
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ExampleTest > the applicati…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ExampleTest.php:15
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ProductoControllerTest > pu…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ProductoControllerTest.php:20
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ProductoControllerTest > pu…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ProductoControllerTest.php:39
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ProductoControllerTest > pu…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ProductoControllerTest.php:56
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ProductoControllerTest > pu…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ProductoControllerTest.php:79
+
+  ────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\ProductoControllerTest > pu…  MissingAppKeyException   
+  No application encryption key has been specified.
+
+  at vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:79
+     75▕     protected function key(array $config)
+     76▕     {
+     77▕         return tap($config['key'], function ($key) {
+     78▕             if (empty($key)) {
+  ➜  79▕                 throw new MissingAppKeyException;
+     80▕             }
+     81▕         });
+     82▕     }
+     83▕ }
+
+      [2m+19 vendor frames [22m
+  20  tests/Feature/ProductoControllerTest.php:96
+
+
+  Tests:    22 failed, 2 passed (2 assertions)
+  Duration: 16.35s
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

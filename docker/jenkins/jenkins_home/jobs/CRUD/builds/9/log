@@ -1,0 +1,251 @@
+Started by GitHub push by Mark-Pino
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/CRUD
+The recommended git tool is: NONE
+using credential githubtoken2
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/CRUD/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://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@github.com/Mark-Pino/CRUD.git # timeout=10
+Fetching upstream changes from https://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@github.com/Mark-Pino/CRUD.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_ASKPASS to set credentials githubtoken2
+ > git fetch --tags --force --progress -- https://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@github.com/Mark-Pino/CRUD.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 0abaf6197eda178d0dd5e08f8f05bca6de393e11 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0abaf6197eda178d0dd5e08f8f05bca6de393e11 # timeout=10
+Commit message: "Update README.md"
+ > git rev-list --no-walk e165d998b5a8989681b7bebacd18b8371666bdc7 # timeout=10
+[CRUD] $ /bin/sh -xe /tmp/jenkins7779783460667532117.sh
++ composer install
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Nothing to install, update or remove
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+
+  [37;44m INFO [39;49m Discovering packages.  
+
+  laravel/sail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/sanctum [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/tinker [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nesbot/carbon [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nunomaduro/collision [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  spatie/laravel-ignition [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+
+82 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+[CRUD] $ /bin/sh -xe /tmp/jenkins17306614969877445279.sh
++ export DB_CONNECTION=mysql
++ export DB_HOST=192.168.1.36
++ export DB_PORT=3306
++ export DB_DATABASE=venta
++ export DB_USERNAME=mark
++ export DB_PASSWORD=mark
++ php artisan migrate --force
+
+   INFO  Nothing to migrate.  
+
+[CRUD] $ /bin/sh -xe /tmp/jenkins1006456788889745669.sh
++ export DB_CONNECTION=mysql
++ export DB_HOST=192.168.1.36
++ export DB_PORT=3306
++ export DB_DATABASE=venta
++ export DB_USERNAME=mark
++ export DB_PASSWORD=mark
++ php artisan test
+
+   PASS  Tests\Unit\ExampleTest
+  ✓ that true is true                                                    0.14s  
+
+   PASS  Tests\Unit\PruebasTest
+  ✓ suma correcta                                                        0.11s  
+
+   PASS  Tests\Feature\CategoriaControllerTest
+  ✓ puede mostrar el índice de categorias                                8.26s  
+  ✓ puede almacenar una categoria                                        0.14s  
+  ✓ puede editar una categoria                                           0.17s  
+  ✓ puede actualizar una categoria                                       0.11s  
+  ✓ puede eliminar una categoria                                         0.17s  
+
+   PASS  Tests\Feature\ClienteControllerTest
+  ✓ puede mostrar el índice de clientes                                  0.21s  
+  ✓ puede almacenar un cliente                                           0.18s  
+  ✓ puede editar un cliente                                              0.17s  
+  ✓ puede actualizar un cliente                                          0.14s  
+  ✓ puede eliminar un cliente                                            0.12s  
+
+   PASS  Tests\Feature\EmpleadosControllerTest
+  ✓ puede listar empleados                                               0.22s  
+  ✓ puede registrar nuevo empleado                                       0.21s  
+  ✓ puede mostrar detalles del empleado                                  0.18s  
+  ✓ puede actualizar empleado                                            0.16s  
+  ✓ puede mostrar la vista de edicion del empleado                       0.19s  
+  ✓ puede eliminar empleado                                              0.12s  
+
+   PASS  Tests\Feature\ExampleTest
+  ✓ the application returns a successful response                        0.13s  
+
+   PASS  Tests\Feature\ProductoControllerTest
+  ✓ puede mostrar el indice de productos                                 0.19s  
+  ✓ puede almacenar un producto                                          0.31s  
+  ✓ puede editar un producto                                             0.19s  
+  ✓ puede actualizar un producto                                         0.11s  
+  ✓ puede eliminar un producto                                           0.35s  
+
+  Tests:    24 passed (70 assertions)
+  Duration: 14.19s
+
+[CRUD] $ /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/bin/sonar-scanner -Dsonar.host.url=http://docker.sonar:9000/ ******** -Dsonar.projectKey=CRUD -Dsonar.projectName=CRUD -Dsonar.host.url=http://docker.sonar:9000 -Dsonar.login=squ_3805da18fcef575583bc85ce5c5183b9305c14d9 -Dsonar.projectVersion=1.0 -Dsonar.sources=. -Dsonar.projectBaseDir=/var/jenkins_home/workspace/CRUD
+21:06:56.255 WARN  Property 'sonar.host.url' with value 'http://docker.sonar:9000/' is overridden with value 'http://docker.sonar:9000'
+21:06:56.272 INFO  Scanner configuration file: /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/conf/sonar-scanner.properties
+21:06:56.276 INFO  Project root configuration file: NONE
+21:06:56.312 INFO  SonarScanner CLI 6.2.1.4610
+21:06:56.315 INFO  Java 17.0.12 Eclipse Adoptium (64-bit)
+21:06:56.316 INFO  Linux 5.15.153.1-microsoft-standard-WSL2 amd64
+21:06:56.380 INFO  User cache: /var/jenkins_home/.sonar/cache
+21:06:57.174 INFO  Communicating with SonarQube Server 10.2.1.78527
+21:06:58.409 INFO  Load global settings
+21:06:58.561 INFO  Load global settings (done) | time=155ms
+21:06:58.564 INFO  Server id: 147B411E-AZINp7vKb0MQkk70uHHG
+21:06:58.570 INFO  User cache: /var/jenkins_home/.sonar/cache
+21:06:58.574 INFO  Load/download plugins
+21:06:58.574 INFO  Load plugins index
+21:06:58.663 INFO  Load plugins index (done) | time=89ms
+21:06:59.251 INFO  Load/download plugins (done) | time=677ms
+21:07:00.513 INFO  Process project properties
+21:07:00.528 INFO  Process project properties (done) | time=15ms
+21:07:00.531 INFO  Execute project builders
+21:07:00.536 INFO  Execute project builders (done) | time=5ms
+21:07:00.547 INFO  Project key: CRUD
+21:07:00.547 INFO  Base dir: /var/jenkins_home/workspace/CRUD
+21:07:00.548 INFO  Working dir: /var/jenkins_home/workspace/CRUD/.scannerwork
+21:07:00.559 INFO  Load project settings for component key: 'CRUD'
+21:07:00.585 INFO  Load project settings for component key: 'CRUD' (done) | time=26ms
+21:07:00.785 INFO  Auto-configuring with CI 'Jenkins'
+21:07:00.788 INFO  Load quality profiles
+21:07:00.980 INFO  Load quality profiles (done) | time=192ms
+21:07:00.986 INFO  Load active rules
+21:07:04.403 INFO  Load active rules (done) | time=3417ms
+21:07:04.408 INFO  Load analysis cache
+21:07:04.466 INFO  Load analysis cache | time=58ms
+21:07:04.522 WARN  The property 'sonar.login' is deprecated and will be removed in the future. Please use the 'sonar.token' property instead when passing a token.
+21:07:04.549 INFO  Load project repositories
+21:07:04.590 INFO  Load project repositories (done) | time=41ms
+21:07:04.633 INFO  Indexing files...
+21:07:04.633 INFO  Project configuration:
+21:07:14.634 INFO  163 files indexed...  (last one was tests/Unit/PruebasTest.php)
+21:07:24.634 INFO  163 files indexed...  (last one was tests/Unit/PruebasTest.php)
+21:07:33.535 INFO  164 files indexed
+21:07:33.535 INFO  8112 files ignored because of scm ignore settings
+21:07:33.537 INFO  Quality profile for css: Sonar way
+21:07:33.537 INFO  Quality profile for js: Sonar way
+21:07:33.537 INFO  Quality profile for json: Sonar way
+21:07:33.537 INFO  Quality profile for php: Sonar way
+21:07:33.537 INFO  Quality profile for xml: Sonar way
+21:07:33.538 INFO  ------------- Run sensors on module CRUD
+21:07:33.784 INFO  Load metrics repository
+21:07:33.835 INFO  Load metrics repository (done) | time=51ms
+21:07:38.343 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+21:07:38.344 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+21:07:38.346 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+21:07:38.346 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=4ms
+21:07:38.346 INFO  Sensor IaC CloudFormation Sensor [iac]
+21:07:38.367 INFO  0 source files to be analyzed
+21:07:38.393 INFO  0/0 source files have been analyzed
+21:07:38.393 INFO  Sensor IaC CloudFormation Sensor [iac] (done) | time=47ms
+21:07:38.393 INFO  Sensor IaC Kubernetes Sensor [iac]
+21:07:38.402 INFO  0 source files to be analyzed
+21:07:38.407 INFO  0/0 source files have been analyzed
+21:07:38.407 INFO  Sensor IaC Kubernetes Sensor [iac] (done) | time=14ms
+21:07:38.407 INFO  Sensor IaC AzureResourceManager Sensor [iac]
+21:07:38.414 INFO  0 source files to be analyzed
+21:07:38.640 INFO  0/0 source files have been analyzed
+21:07:38.640 INFO  Sensor IaC AzureResourceManager Sensor [iac] (done) | time=233ms
+21:07:38.641 INFO  Sensor JavaScript/TypeScript analysis [javascript]
+21:12:54.616 WARN  Node.js version 20 is not recommended, you might experience issues. Please use a recommended version of Node.js [16, 18]
+21:13:50.111 INFO  Found 0 tsconfig.json file(s): []
+21:13:50.143 INFO  Creating TypeScript program
+21:13:50.143 INFO  3 source files to be analyzed
+21:13:50.143 INFO  TypeScript configuration file /tmp/tmp-2500-cmtQMuKNtsBA
+21:13:50.598 INFO  Creating TypeScript program (done) | time=455ms
+21:13:50.598 INFO  Starting analysis with current program
+21:14:00.144 INFO  2/3 files analyzed, current file: /var/jenkins_home/workspace/CRUD/resources/js/bootstrap.js
+21:14:06.724 INFO  Analyzed 3 file(s) with current program
+21:14:06.727 INFO  3/3 source files have been analyzed
+21:14:06.727 INFO  Hit the cache for 0 out of 3
+21:14:06.729 INFO  Miss the cache for 3 out of 3: ANALYSIS_MODE_INELIGIBLE [3/3]
+21:14:06.729 INFO  Sensor JavaScript/TypeScript analysis [javascript] (done) | time=388088ms
+21:14:06.729 INFO  Sensor CSS Rules [javascript]
+21:14:06.737 INFO  93 source files to be analyzed
+21:14:16.737 INFO  36/93 files analyzed, current file: /var/jenkins_home/workspace/CRUD/routes/web.php
+21:14:17.837 INFO  93/93 source files have been analyzed
+21:14:17.837 INFO  Hit the cache for 0 out of 0
+21:14:17.837 INFO  Miss the cache for 0 out of 0
+21:14:17.837 INFO  Sensor CSS Rules [javascript] (done) | time=11108ms
+21:14:17.837 INFO  Sensor CSS Metrics [javascript]
+21:14:17.895 INFO  Sensor CSS Metrics [javascript] (done) | time=58ms
+21:14:17.896 INFO  Sensor C# Project Type Information [csharp]
+21:14:17.897 INFO  Sensor C# Project Type Information [csharp] (done) | time=1ms
+21:14:17.898 INFO  Sensor C# Analysis Log [csharp]
+21:14:17.931 INFO  Sensor C# Analysis Log [csharp] (done) | time=33ms
+21:14:17.931 INFO  Sensor C# Properties [csharp]
+21:14:17.931 INFO  Sensor C# Properties [csharp] (done) | time=0ms
+21:14:17.931 INFO  Sensor HTML [web]
+21:14:18.415 INFO  Sensor HTML [web] (done) | time=484ms
+21:14:18.416 INFO  Sensor XML Sensor [xml]
+21:14:18.420 INFO  1 source file to be analyzed
+21:14:18.792 INFO  1/1 source file has been analyzed
+21:14:18.792 INFO  Sensor XML Sensor [xml] (done) | time=376ms
+21:14:18.792 INFO  Sensor PHP sensor [php]
+21:14:18.836 INFO  Starting PHP symbol indexer
+21:14:18.837 INFO  91 source files to be analyzed
+21:14:20.167 INFO  91/91 source files have been analyzed
+21:14:20.168 INFO  Cached information of global symbols will be used for 0 out of 91 files. Global symbols were recomputed for the remaining files.
+21:14:20.195 INFO  Starting PHP rules
+21:14:20.196 INFO  91 source files to be analyzed
+21:14:26.875 INFO  91/91 source files have been analyzed
+21:14:26.876 INFO  The PHP analyzer was able to leverage cached data from previous analyses for 0 out of 91 files. These files were not parsed.
+21:14:26.876 INFO  Sensor PHP sensor [php] (done) | time=8084ms
+21:14:26.876 INFO  Sensor Analyzer for "php.ini" files [php]
+21:14:26.901 INFO  Sensor Analyzer for "php.ini" files [php] (done) | time=25ms
+21:14:26.901 INFO  Sensor PHPUnit report sensor [php]
+21:14:26.902 INFO  No PHPUnit tests reports provided (see 'sonar.php.tests.reportPath' property)
+21:14:26.903 INFO  No PHPUnit coverage reports provided (see 'sonar.php.coverage.reportPaths' property)
+21:14:26.922 WARN  PHPUnit test cases are detected. Make sure to specify test sources via `sonar.test` to get more precise analysis results.
+21:14:27.254 INFO  Sensor PHPUnit report sensor [php] (done) | time=353ms
+21:14:27.254 INFO  Sensor TextAndSecretsSensor [text]
+21:14:28.142 INFO  99 source files to be analyzed
+21:14:28.598 INFO  99/99 source files have been analyzed
+21:14:28.599 INFO  Sensor TextAndSecretsSensor [text] (done) | time=1345ms
+21:14:28.599 INFO  Sensor VB.NET Project Type Information [vbnet]
+21:14:28.601 INFO  Sensor VB.NET Project Type Information [vbnet] (done) | time=2ms
+21:14:28.601 INFO  Sensor VB.NET Analysis Log [vbnet]
+21:14:28.640 INFO  Sensor VB.NET Analysis Log [vbnet] (done) | time=39ms
+21:14:28.640 INFO  Sensor VB.NET Properties [vbnet]
+21:14:28.640 INFO  Sensor VB.NET Properties [vbnet] (done) | time=0ms
+21:14:28.640 INFO  Sensor IaC Docker Sensor [iac]
+21:14:28.650 INFO  0 source files to be analyzed
+21:14:28.708 INFO  0/0 source files have been analyzed
+21:14:28.708 INFO  Sensor IaC Docker Sensor [iac] (done) | time=68ms
+21:14:28.718 INFO  ------------- Run sensors on project
+21:14:28.830 INFO  Sensor Analysis Warnings import [csharp]
+21:14:28.831 INFO  Sensor Analysis Warnings import [csharp] (done) | time=1ms
+21:14:28.832 INFO  Sensor Zero Coverage Sensor
+21:14:29.025 INFO  Sensor Zero Coverage Sensor (done) | time=193ms
+21:14:29.249 INFO  CPD Executor 42 files had no CPD blocks
+21:14:29.249 INFO  CPD Executor Calculating CPD for 52 files
+21:14:29.384 INFO  CPD Executor CPD calculation finished (done) | time=135ms
+21:14:31.624 INFO  Analysis report generated in 894ms, dir size=404.5 kB
+21:14:42.652 INFO  Analysis report compressed in 11023ms, zip size=246.8 kB
+21:14:42.826 INFO  Analysis report uploaded in 174ms
+21:14:42.830 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://docker.sonar:9000/dashboard?id=CRUD
+21:14:42.830 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+21:14:42.830 INFO  More about the report processing at http://docker.sonar:9000/api/ce/task?id=AZLAYbjT74mEDhfZY0pw
+21:15:33.640 INFO  Analysis total time: 8:33.930 s
+21:15:33.647 INFO  EXECUTION SUCCESS
+21:15:33.648 INFO  Total time: 8:37.380s
+Finished: SUCCESS

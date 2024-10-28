@@ -1,0 +1,1 @@
+docker/sonarqube/data/sonar.mv.db filter=lfs diff=lfs merge=lfs -text

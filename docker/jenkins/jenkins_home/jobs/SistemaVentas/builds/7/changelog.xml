@@ -1,0 +1,11 @@
+commit e565ae92f22a143b559c85313815b9bef44fcd8c
+tree 37c5ac277925914c9c09d47332b3d6de84beb095
+parent 5ae64a76d9a5e800fb7731782597f8471a8e4ff2
+author Mark-Pino <mark.pino@upeu.edu.pe> 2024-10-23 15:19:29 -0500
+committer Mark-Pino <mark.pino@upeu.edu.pe> 2024-10-23 15:19:29 -0500
+
+    Proyecto
+
+
+:100644 100644 c48679375372d1a0cf23ad1f0560acec488c2155 d1e934b0d58ebf4d0454c28db4738e683f9428ef M	.scannerwork/report-task.txt
+:100644 100644 a4245ef5cc209665e960f9350e8beee6626a7f45 0dee681effc744e4ae85863d617ae8f5a1ea6242 M	tests/Feature/Auth/AuthenticationTest.php

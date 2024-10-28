@@ -1,0 +1,18 @@
+commit 71a73fcb2ee2ee67635278e37469a50fdd472380
+tree 23c7d61d2f863d8fc95f62f37d0e8d2f2c5259d0
+parent 700e6c7b3e98c707fc8ee1ac6461ecf6f2f42497
+author Mark <82171189+Mark-Pino@users.noreply.github.com> 2024-10-24 15:23:26 -0500
+committer GitHub <noreply@github.com> 2024-10-24 15:23:26 -0500
+
+    Update Jenkinsfile
+
+:100644 100644 b7627b41af85fe9e469339f6c7f60dea03f7c610 80e9e3b10b6e7b825b24416b6bc4642e9cd6ae8b M	Jenkinsfile
+commit 700e6c7b3e98c707fc8ee1ac6461ecf6f2f42497
+tree dce22fe70e3221b5b43dc8a79aabdc441d3da3fd
+parent bf58dd8bffe8bc4da9e0169613337443947a6d5a
+author Mark <82171189+Mark-Pino@users.noreply.github.com> 2024-10-24 17:22:44 -0300
+committer GitHub <noreply@github.com> 2024-10-24 17:22:44 -0300
+
+    Add files via upload
+
+:000000 100644 0000000000000000000000000000000000000000 b7627b41af85fe9e469339f6c7f60dea03f7c610 A	Jenkinsfile

@@ -1,0 +1,10 @@
+commit 83ae4f8725ee107037f89577f1e364236f2ea69f
+tree 1bdeb2c179f314c712bee9edd639469cd2205332
+parent de68bbd819add183bb8aba77367f7c5e78e7417a
+author Mark-Pino <mark.pino@upeu.edu.pe> 2024-10-24 15:30:23 -0500
+committer Mark-Pino <mark.pino@upeu.edu.pe> 2024-10-24 15:30:23 -0500
+
+    Jenkins
+
+
+:100644 100644 f958c02067cee6a3006f0899b41adbc4d02ee070 e8d8df907e2101eca94bef79bafd1144edc466cd M	.env.testing

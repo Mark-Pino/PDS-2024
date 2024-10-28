@@ -1,0 +1,13 @@
+Started on Oct 24, 2024, 8:25:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision bf58dd8bffe8bc4da9e0169613337443947a6d5a (refs/remotes/origin/main)
+The recommended git tool is: NONE
+using credential githubtoken2
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_ASKPASS to set credentials githubtoken2
+ > git ls-remote -h -- https://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@github.com/Mark-Pino/CRUD.git # timeout=10
+Found 1 remote heads on https://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@github.com/Mark-Pino/CRUD.git
+[poll] Latest remote head revision on refs/heads/main is: 71a73fcb2ee2ee67635278e37469a50fdd472380
+Done. Took 0.66 sec
+Changes found

@@ -1,0 +1,17 @@
+commit 5ae64a76d9a5e800fb7731782597f8471a8e4ff2
+tree 6bfe89836e90c35612735422a14f24497d668ed7
+parent e961907285ce0085d3a2fc8dc9fe4378761bd426
+author Mark-Pino <mark.pino@upeu.edu.pe> 2024-10-23 13:43:43 -0500
+committer Mark-Pino <mark.pino@upeu.edu.pe> 2024-10-23 13:43:43 -0500
+
+    Proyecto
+
+
+:100644 100644 e8d0dfbedb73bd69140313511613b2dbed5423ce c48679375372d1a0cf23ad1f0560acec488c2155 M	.scannerwork/report-task.txt
+:100644 100644 f63373cb4e86f12cf53150e9b729fe4b6f968599 a4245ef5cc209665e960f9350e8beee6626a7f45 M	tests/Feature/Auth/AuthenticationTest.php
+:100644 100644 ba19d9ce56bb62f831e465028985cd3e2ee0dd5b 2eedcc01175436f5c4ecebd7baf52a0ed8b2a0f0 M	tests/Feature/Auth/EmailVerificationTest.php
+:100644 100644 ff85721e25d7f6c662352ffb861d52798bbf27f2 6dd0ba7b8f39854eac34cb0224f975ebdffbdaef M	tests/Feature/Auth/PasswordConfirmationTest.php
+:100644 100644 4a260656cf51e1138a7a85bbd97b06784e7b8103 97806d296699d6aa0a2818ef7746fe411a5361cc M	tests/Feature/Auth/PasswordResetTest.php
+:100644 100644 ca28c6c6eb4687e4207b83c9d2f871fe7dae1dd2 9511579ccdf72c3b3584ff2b96b4f3ce8ed9de93 M	tests/Feature/Auth/PasswordUpdateTest.php
+:100644 100644 30829b1e2c0e15d3145154e0a4475026a19e584d 25450e27b6054424b3405d2c85de5d0f75c8e7da M	tests/Feature/Auth/RegistrationTest.php
+:100644 100644 252fdcc525a1d0a0c52fe12ffca7d89fc87292ea 84e74dae10965eb5a7bfdeb19e428795dd58a3fe M	tests/Feature/ProfileTest.php

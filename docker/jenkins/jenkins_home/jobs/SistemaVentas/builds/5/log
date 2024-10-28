@@ -1,0 +1,321 @@
+Started by user [8mha:////4KbZhfg0d064+evRdUY0tXHmIfMHGOM4OWf5m4+/VA5jAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/SistemaVentas
+The recommended git tool is: NONE
+using credential githubtoken
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/SistemaVentas/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://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@github.com/Mark-Pino/SistemaVentasLaravel.git # timeout=10
+Fetching upstream changes from https://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@github.com/Mark-Pino/SistemaVentasLaravel.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_ASKPASS to set credentials githubtoken
+ > git fetch --tags --force --progress -- https://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@github.com/Mark-Pino/SistemaVentasLaravel.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 5ae64a76d9a5e800fb7731782597f8471a8e4ff2 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5ae64a76d9a5e800fb7731782597f8471a8e4ff2 # timeout=10
+Commit message: "Proyecto"
+ > git rev-list --no-walk 5ae64a76d9a5e800fb7731782597f8471a8e4ff2 # timeout=10
+[SistemaVentas] $ /bin/sh -xe /tmp/jenkins17387203281414305247.sh
++ composer install
+Installing dependencies from lock file (including require-dev)
+Verifying lock file contents can be installed on current platform.
+Nothing to install, update or remove
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+
+  [37;44m INFO [39;49m Discovering packages.  
+
+  hardevine/shoppingcart [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  haruncpi/laravel-id-generator [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  intervention/image [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  itsgoingd/clockwork [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  kyslik/column-sortable [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel-lang/config [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel-lang/lang [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel-lang/locales [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel-lang/publisher [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/breeze [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/sail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/sanctum [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/tinker [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nesbot/carbon [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nunomaduro/collision [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  spatie/laravel-backup [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  spatie/laravel-ignition [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  spatie/laravel-permission [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  spatie/laravel-query-builder [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  spatie/laravel-signal-aware-command [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+
+98 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+[SistemaVentas] $ /bin/sh -xe /tmp/jenkins16842035873775742000.sh
++ export DB_CONNECTION=mysql
++ export DB_HOST=192.168.1.36
++ export DB_PORT=3306
++ export DB_DATABASE=venta
++ export DB_USERNAME=mark
++ export DB_PASSWORD=mark
++ php artisan migrate --force
+
+   INFO  Nothing to migrate.  
+
+[SistemaVentas] $ /bin/sh -xe /tmp/jenkins1970487372261067880.sh
++ export DB_CONNECTION=mysql
++ export DB_HOST=192.168.1.36
++ export DB_PORT=3306
++ export DB_DATABASE=venta
++ export DB_USERNAME=mark
++ export DB_PASSWORD=mark
++ php artisan test
+
+  [30;43;1m WARN [39;49;22m Your XML configuration validates against a deprecated schema. Migrate your XML configuration using "--migrate-configuration"!
+
+   PASS  Tests\Unit\ExampleTest
+  ✓ that true is true                                                    0.15s  
+
+   PASS  Tests\Feature\Auth\AuthenticationTest
+  ✓ login screen can be rendered                                         9.73s  
+  ✓ users can not authenticate with invalid password                     1.17s  
+
+   PASS  Tests\Feature\Auth\EmailVerificationTest
+  ✓ email can be verified                                                0.43s  
+  ✓ email is not verified with invalid hash                              0.25s  
+
+   PASS  Tests\Feature\Auth\PasswordConfirmationTest
+  ✓ password can be confirmed                                            0.22s  
+  ✓ password is not confirmed with invalid password                      0.42s  
+
+   PASS  Tests\Feature\Auth\PasswordResetTest
+  ✓ reset password link can be requested                                 0.70s  
+  ✓ password can be reset with valid token                               0.34s  
+
+   PASS  Tests\Feature\Auth\PasswordUpdateTest
+  ✓ password can be updated                                              0.21s  
+
+   PASS  Tests\Feature\Auth\RegistrationTest
+  ✓ registration screen can be rendered                                  0.22s  
+
+   PASS  Tests\Feature\ExampleTest
+  ✓ the application returns a successful response                        0.22s  
+
+   PASS  Tests\Feature\ProfileTest
+  ✓ profile page is displayed                                            0.47s  
+
+  Tests:    13 passed (21 assertions)
+  Duration: 16.44s
+
+Unpacking https://repo1.maven.org/maven2/org/sonarsource/scanner/cli/sonar-scanner-cli/6.2.1.4610/sonar-scanner-cli-6.2.1.4610.zip to /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner on Jenkins
+[SistemaVentas] $ /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/bin/sonar-scanner -Dsonar.host.url=http://docker.sonar:9000/ ******** -Dsonar.projectKey=sistema_ventas_laravel "-Dsonar.projectName=Sistema de Ventas Laravel" -Dsonar.host.url=http://docker.sonar:9000 -Dsonar.login=squ_3805da18fcef575583bc85ce5c5183b9305c14d9 -Dsonar.projectVersion=1.0 -Dsonar.sources=. -Dsonar.projectBaseDir=/var/jenkins_home/workspace/SistemaVentas
+19:25:36.164 WARN  Property 'sonar.host.url' with value 'http://docker.sonar:9000/' is overridden with value 'http://docker.sonar:9000'
+19:25:36.178 INFO  Scanner configuration file: /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/conf/sonar-scanner.properties
+19:25:36.181 INFO  Project root configuration file: NONE
+19:25:36.208 INFO  SonarScanner CLI 6.2.1.4610
+19:25:36.212 INFO  Java 17.0.12 Eclipse Adoptium (64-bit)
+19:25:36.213 INFO  Linux 5.15.153.1-microsoft-standard-WSL2 amd64
+19:25:36.268 INFO  User cache: /var/jenkins_home/.sonar/cache
+19:25:47.357 INFO  Communicating with SonarQube Server 10.2.1.78527
+19:25:48.222 INFO  Load global settings
+19:25:48.358 INFO  Load global settings (done) | time=139ms
+19:25:48.363 INFO  Server id: 147B411E-AZINp7vKb0MQkk70uHHG
+19:25:48.401 INFO  User cache: /var/jenkins_home/.sonar/cache
+19:25:48.404 INFO  Load/download plugins
+19:25:48.404 INFO  Load plugins index
+19:25:48.496 INFO  Load plugins index (done) | time=92ms
+19:26:06.025 INFO  Load/download plugins (done) | time=17621ms
+19:26:07.823 INFO  Process project properties
+19:26:07.835 INFO  Process project properties (done) | time=12ms
+19:26:07.837 INFO  Execute project builders
+19:26:07.839 INFO  Execute project builders (done) | time=2ms
+19:26:07.849 INFO  Project key: sistema_ventas_laravel
+19:26:07.849 INFO  Base dir: /var/jenkins_home/workspace/SistemaVentas
+19:26:07.849 INFO  Working dir: /var/jenkins_home/workspace/SistemaVentas/.scannerwork
+19:26:07.858 INFO  Load project settings for component key: 'sistema_ventas_laravel'
+19:26:07.884 INFO  Load project settings for component key: 'sistema_ventas_laravel' (done) | time=26ms
+19:26:08.082 INFO  Auto-configuring with CI 'Jenkins'
+19:26:08.085 INFO  Load quality profiles
+19:26:08.302 INFO  Load quality profiles (done) | time=217ms
+19:26:08.307 INFO  Load active rules
+19:26:11.745 INFO  Load active rules (done) | time=3438ms
+19:26:11.749 INFO  Load analysis cache
+19:26:11.810 INFO  Load analysis cache | time=61ms
+19:26:11.878 WARN  The property 'sonar.login' is deprecated and will be removed in the future. Please use the 'sonar.token' property instead when passing a token.
+19:26:11.897 INFO  Load project repositories
+19:26:11.945 INFO  Load project repositories (done) | time=48ms
+19:26:11.976 INFO  Indexing files...
+19:26:11.977 INFO  Project configuration:
+19:26:21.977 INFO  
+19:26:31.975 INFO  
+19:26:41.976 INFO  
+19:26:51.976 INFO  233 files indexed...  (last one was public/assets/images/page-img/14.jpg)
+19:26:52.975 INFO  Some of the project files were automatically excluded because they looked like generated code. Enable debug logging to see which files were excluded. You can disable bundle detection by setting sonar.javascript.detectBundles=false
+19:27:01.975 INFO  1731 files indexed...  (last one was public/assets/vendor/@fortawesome/fontawesome-free/svgs/solid/shoe-prints.svg)
+19:27:11.975 INFO  3433 files indexed...  (last one was public/assets/vendor/ionicons/dist/collection/components/icon/svg/trophy-sharp.svg)
+19:27:21.975 INFO  5237 files indexed...  (last one was public/assets/vendor/ionicons/dist/svg/git-compare-sharp.svg)
+19:27:31.974 INFO  7000 files indexed...  (last one was public/assets/vendor/remixicon/icons/Finance/money-cny-box-fill.svg)
+19:27:41.974 INFO  8362 files indexed...  (last one was tests/Unit/ExampleTest.php)
+19:27:51.974 INFO  8362 files indexed...  (last one was tests/Unit/ExampleTest.php)
+19:28:01.973 INFO  8362 files indexed...  (last one was tests/Unit/ExampleTest.php)
+19:28:11.973 INFO  8362 files indexed...  (last one was tests/Unit/ExampleTest.php)
+19:28:19.342 INFO  8363 files indexed
+19:28:19.342 INFO  11364 files ignored because of scm ignore settings
+19:28:19.343 INFO  Quality profile for css: Sonar way
+19:28:19.343 INFO  Quality profile for js: Sonar way
+19:28:19.343 INFO  Quality profile for json: Sonar way
+19:28:19.343 INFO  Quality profile for php: Sonar way
+19:28:19.343 INFO  Quality profile for web: Sonar way
+19:28:19.343 INFO  Quality profile for xml: Sonar way
+19:28:19.343 INFO  ------------- Run sensors on module Sistema de Ventas Laravel
+19:28:19.494 INFO  Load metrics repository
+19:28:19.557 INFO  Load metrics repository (done) | time=63ms
+19:28:22.871 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+19:28:22.872 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+19:28:22.874 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+19:28:22.874 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=4ms
+19:28:22.874 INFO  Sensor IaC CloudFormation Sensor [iac]
+19:28:23.426 INFO  0 source files to be analyzed
+19:28:23.458 INFO  0/0 source files have been analyzed
+19:28:23.458 INFO  Sensor IaC CloudFormation Sensor [iac] (done) | time=584ms
+19:28:23.458 INFO  Sensor IaC Kubernetes Sensor [iac]
+19:28:23.734 INFO  0 source files to be analyzed
+19:28:23.739 INFO  0/0 source files have been analyzed
+19:28:23.739 INFO  Sensor IaC Kubernetes Sensor [iac] (done) | time=281ms
+19:28:23.739 INFO  Sensor IaC AzureResourceManager Sensor [iac]
+19:28:23.988 INFO  0 source files to be analyzed
+19:28:24.111 INFO  0/0 source files have been analyzed
+19:28:24.111 INFO  Sensor IaC AzureResourceManager Sensor [iac] (done) | time=372ms
+19:28:24.111 INFO  Sensor JavaScript/TypeScript analysis [javascript]
+19:31:52.806 ERROR Error when running: 'node -v'. Is Node.js available during analysis?
+org.sonar.plugins.javascript.nodejs.NodeCommandException: Error when running: 'node -v'. Is Node.js available during analysis?
+	at org.sonar.plugins.javascript.nodejs.NodeCommand.start(NodeCommand.java:85)
+	at org.sonar.plugins.javascript.nodejs.NodeCommandBuilderImpl.getVersion(NodeCommandBuilderImpl.java:217)
+	at org.sonar.plugins.javascript.nodejs.NodeCommandBuilderImpl.checkNodeCompatibility(NodeCommandBuilderImpl.java:173)
+	at org.sonar.plugins.javascript.nodejs.NodeCommandBuilderImpl.build(NodeCommandBuilderImpl.java:146)
+	at org.sonar.plugins.javascript.eslint.BridgeServerImpl.initNodeCommand(BridgeServerImpl.java:253)
+	at org.sonar.plugins.javascript.eslint.BridgeServerImpl.startServer(BridgeServerImpl.java:181)
+	at org.sonar.plugins.javascript.eslint.BridgeServerImpl.startServerLazily(BridgeServerImpl.java:293)
+	at org.sonar.plugins.javascript.eslint.AbstractEslintSensor.execute(AbstractEslintSensor.java:73)
+	at org.sonar.scanner.sensor.AbstractSensorWrapper.analyse(AbstractSensorWrapper.java:64)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:88)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.lambda$execute$1(ModuleSensorsExecutor.java:61)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.withModuleStrategy(ModuleSensorsExecutor.java:79)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:61)
+	at org.sonar.scanner.scan.SpringModuleScanContainer.doAfterStart(SpringModuleScanContainer.java:82)
+	at org.sonar.core.platform.SpringComponentContainer.startComponents(SpringComponentContainer.java:188)
+	at org.sonar.core.platform.SpringComponentContainer.execute(SpringComponentContainer.java:167)
+	at org.sonar.scanner.scan.SpringProjectScanContainer.scan(SpringProjectScanContainer.java:398)
+	at org.sonar.scanner.scan.SpringProjectScanContainer.scanRecursively(SpringProjectScanContainer.java:394)
+	at org.sonar.scanner.scan.SpringProjectScanContainer.doAfterStart(SpringProjectScanContainer.java:363)
+	at org.sonar.core.platform.SpringComponentContainer.startComponents(SpringComponentContainer.java:188)
+	at org.sonar.core.platform.SpringComponentContainer.execute(SpringComponentContainer.java:167)
+	at org.sonar.scanner.bootstrap.SpringGlobalContainer.doAfterStart(SpringGlobalContainer.java:139)
+	at org.sonar.core.platform.SpringComponentContainer.startComponents(SpringComponentContainer.java:188)
+	at org.sonar.core.platform.SpringComponentContainer.execute(SpringComponentContainer.java:167)
+	at org.sonar.batch.bootstrapper.Batch.doExecute(Batch.java:71)
+	at org.sonar.batch.bootstrapper.Batch.execute(Batch.java:65)
+	at org.sonarsource.scanner.lib.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.sonarsource.scanner.lib.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:62)
+	at jdk.proxy3/jdk.proxy3.$Proxy2.execute(Unknown Source)
+	at org.sonarsource.scanner.lib.InProcessScannerEngineFacade.doAnalyze(InProcessScannerEngineFacade.java:39)
+	at org.sonarsource.scanner.lib.ScannerEngineFacade.analyze(ScannerEngineFacade.java:61)
+	at org.sonarsource.scanner.cli.Main.analyze(Main.java:77)
+	at org.sonarsource.scanner.cli.Main.main(Main.java:63)
+Caused by: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at org.sonar.plugins.javascript.nodejs.ProcessWrapperImpl.startProcess(ProcessWrapperImpl.java:43)
+	at org.sonar.plugins.javascript.nodejs.NodeCommand.start(NodeCommand.java:82)
+	... 36 common frames omitted
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.base/java.lang.ProcessImpl.start(Unknown Source)
+	... 40 common frames omitted
+
+19:31:52.806 INFO  Hit the cache for 0 out of 0
+19:31:52.807 INFO  Miss the cache for 0 out of 0
+19:31:52.808 INFO  Sensor JavaScript/TypeScript analysis [javascript] (done) | time=208697ms
+19:31:52.808 INFO  Sensor JavaScript inside HTML analysis [javascript]
+19:31:52.810 INFO  Hit the cache for 0 out of 0
+19:31:52.810 INFO  Miss the cache for 0 out of 0
+19:31:52.810 INFO  Sensor JavaScript inside HTML analysis [javascript] (done) | time=2ms
+19:31:52.810 INFO  Sensor CSS Rules [javascript]
+19:31:52.821 INFO  Hit the cache for 0 out of 0
+19:31:52.822 INFO  Miss the cache for 0 out of 0
+19:31:52.822 INFO  Sensor CSS Rules [javascript] (done) | time=12ms
+19:31:52.822 INFO  Sensor CSS Metrics [javascript]
+19:31:53.762 INFO  Sensor CSS Metrics [javascript] (done) | time=940ms
+19:31:53.762 INFO  Sensor C# Project Type Information [csharp]
+19:31:53.768 INFO  Sensor C# Project Type Information [csharp] (done) | time=6ms
+19:31:53.768 INFO  Sensor C# Analysis Log [csharp]
+19:31:53.822 INFO  Sensor C# Analysis Log [csharp] (done) | time=54ms
+19:31:53.822 INFO  Sensor C# Properties [csharp]
+19:31:53.822 INFO  Sensor C# Properties [csharp] (done) | time=0ms
+19:31:53.822 INFO  Sensor HTML [web]
+19:31:55.535 INFO  Sensor HTML [web] (done) | time=1713ms
+19:31:55.535 INFO  Sensor XML Sensor [xml]
+19:31:55.539 INFO  1 source file to be analyzed
+19:31:55.796 INFO  1/1 source file has been analyzed
+19:31:55.797 INFO  Sensor XML Sensor [xml] (done) | time=262ms
+19:31:55.797 INFO  Sensor PHP sensor [php]
+19:31:55.825 INFO  Starting PHP symbol indexer
+19:31:55.826 INFO  199 source files to be analyzed
+19:31:57.885 INFO  199/199 source files have been analyzed
+19:31:57.885 INFO  Cached information of global symbols will be used for 0 out of 199 files. Global symbols were recomputed for the remaining files.
+19:31:57.909 INFO  Starting PHP rules
+19:31:57.910 INFO  199 source files to be analyzed
+19:32:07.910 INFO  122/199 files analyzed, current file: resources/views/profile/partials/navbar-profile.blade.php
+19:32:14.234 INFO  199/199 source files have been analyzed
+19:32:14.234 INFO  The PHP analyzer was able to leverage cached data from previous analyses for 0 out of 199 files. These files were not parsed.
+19:32:14.234 INFO  Sensor PHP sensor [php] (done) | time=18437ms
+19:32:14.234 INFO  Sensor Analyzer for "php.ini" files [php]
+19:32:14.257 INFO  Sensor Analyzer for "php.ini" files [php] (done) | time=23ms
+19:32:14.257 INFO  Sensor PHPUnit report sensor [php]
+19:32:14.258 INFO  No PHPUnit tests reports provided (see 'sonar.php.tests.reportPath' property)
+19:32:14.259 INFO  No PHPUnit coverage reports provided (see 'sonar.php.coverage.reportPaths' property)
+19:32:14.561 WARN  PHPUnit test cases are detected. Make sure to specify test sources via `sonar.test` to get more precise analysis results.
+19:32:14.862 INFO  Sensor PHPUnit report sensor [php] (done) | time=605ms
+19:32:14.862 INFO  Sensor TextAndSecretsSensor [text]
+19:32:15.428 INFO  258 source files to be analyzed
+19:32:19.173 INFO  258/258 source files have been analyzed
+19:32:19.173 INFO  Sensor TextAndSecretsSensor [text] (done) | time=4311ms
+19:32:19.173 INFO  Sensor VB.NET Project Type Information [vbnet]
+19:32:19.177 INFO  Sensor VB.NET Project Type Information [vbnet] (done) | time=4ms
+19:32:19.178 INFO  Sensor VB.NET Analysis Log [vbnet]
+19:32:19.213 INFO  Sensor VB.NET Analysis Log [vbnet] (done) | time=35ms
+19:32:19.214 INFO  Sensor VB.NET Properties [vbnet]
+19:32:19.214 INFO  Sensor VB.NET Properties [vbnet] (done) | time=0ms
+19:32:19.214 INFO  Sensor IaC Docker Sensor [iac]
+19:32:19.347 INFO  0 source files to be analyzed
+19:32:19.390 INFO  0/0 source files have been analyzed
+19:32:19.390 INFO  Sensor IaC Docker Sensor [iac] (done) | time=176ms
+19:32:19.399 INFO  ------------- Run sensors on project
+19:32:19.519 INFO  Sensor Analysis Warnings import [csharp]
+19:32:19.519 INFO  Sensor Analysis Warnings import [csharp] (done) | time=0ms
+19:32:19.520 INFO  Sensor Zero Coverage Sensor
+19:32:21.498 INFO  Sensor Zero Coverage Sensor (done) | time=1979ms
+19:32:21.952 INFO  SCM Publisher SCM provider for this project is: git
+19:32:21.954 INFO  SCM Publisher 9 source files to be analyzed
+19:32:22.966 INFO  SCM Publisher 9/9 source files have been analyzed (done) | time=1012ms
+19:32:22.980 INFO  CPD Executor 98 files had no CPD blocks
+19:32:22.980 INFO  CPD Executor Calculating CPD for 102 files
+19:32:23.212 INFO  CPD Executor CPD calculation finished (done) | time=232ms
+19:32:28.382 INFO  Analysis report generated in 2104ms, dir size=4.7 MB
+19:32:50.230 INFO  Analysis report compressed in 21837ms, zip size=1.4 MB
+19:32:50.518 INFO  Analysis report uploaded in 288ms
+19:32:50.521 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://docker.sonar:9000/dashboard?id=sistema_ventas_laravel
+19:32:50.521 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+19:32:50.521 INFO  More about the report processing at http://docker.sonar:9000/api/ce/task?id=AZK63hjDXINOz-rqM9Nf
+19:33:51.496 INFO  Analysis total time: 7:44.276 s
+19:33:51.502 INFO  EXECUTION SUCCESS
+19:33:51.502 INFO  Total time: 8:15.329s
+Build was aborted
+Aborted by [8mha:////4KbZhfg0d064+evRdUY0tXHmIfMHGOM4OWf5m4+/VA5jAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Finished: ABORTED
